@@ -1,7 +1,10 @@
 :root{
 --main-color:#b1956e;
 --hov-main-color:#ceb798;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
 .colored{
@@ -9,7 +12,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 .heavy-colored{
-    color: rgba(24, 14, 1, 0.8);
+    color: rgba(24, 14, 1, 0.8) !important;
 }
 
 .brwon{
@@ -17,7 +20,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 .light-brown{
-    background-color: #917a5a;
+    background-color: #917a5a !important;
 }
 
 .roman-title{
@@ -139,3 +142,17 @@ color: var(--hov-main-color) !important;
 .w-auto {
     width: fit-content !important;
 }
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.fixedimg div{
+    width: 100% !important;
+    height: 50vh !important;
+    background: url(../images/fixedimg1.webp) fixed !important;
+    background-size: cover !important;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
