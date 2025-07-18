@@ -9,6 +9,7 @@
     <title>LuxuryHotel</title>
 </head>
 <body>
+
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top brwon">
             <div class="container-fluid">
@@ -57,12 +58,49 @@
                     <form class="d-flex">
                         <input class="form-control me-2 border-0 flex-sm-grow-1" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn text-light border-0 me-2 text-capitalize" type="submit">book now</button>
-                        <button class="btn text-light border-0 me-2" type="submit">login</button>
+                        <button class="btn text-light border-0 me-2" type="button" data-bs-target="#myModal" data-bs-toggle="modal">
+                            login</button>
                     </form>
+                    
                 </div>  
             </div>    
         </nav>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header light-brown">
+                        <h4 class="modal-title text-light">Login</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body d-flex flex-column">
+                        <p class="text-capitalize colored mb-0">email address</p>
+                        <input type="text" class="">
+                        <p class="mb-4">We'll never share your email with anyone else.</p>
+                        <p class="text-capitalize colored mb-0">Password</p>
+                        <input type="text" class="">
+                        <div class="form-check form-switch my-3">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                            <label class="form-check-label" for="mySwitch">Remember me</label>
+                        </div>
+                    </div>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn text-light" >Login</button>
+
+                    </div>
+        
+                </div>
+            </div>
+        </div>
     </div><!--/header-->
+
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
 
@@ -134,7 +172,6 @@
         </button>
     </div> <!--/carousel slide-->
     
-    
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
 
@@ -145,6 +182,7 @@
         <button  class="btn text-light border-0 me-2 text-capitalize ">learn more</button>
     </div>
     <!-- /welcome -->
+
     <hr>
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
@@ -205,27 +243,32 @@
     <hr>
     <!------------------------------------------------------------------------------------------------------>
 
-    <div class="translatE2A container-fluid">
+    <!-- <div class="translatE2A container-fluid"> -->
         
         <!-- <div class="titlee"> -->
-            <h2 class="container-fluid  brwon text-light text-capitalize text-center p-3 roman-title d-inline-block mb-0 rounded-1">
-                translate from arabic to english</h2>
+            <!-- <h2 class="container-fluid  brwon text-light text-capitalize text-center p-3 roman-title d-inline-block mb-0 rounded-1">
+                translate from arabic to english</h2> -->
         <!-- </div>  -->
         <!-- /titlee -->
-        <div class="content light-brown p-2 d-flex flex-column rounded-1">
+        <!-- <div class="content light-brown p-2 d-flex flex-column rounded-1">
             <p class="text-capitalize text-light ms-3 h5">write and translate 
                 <a href="#" class="heavy-colored text-decoration-none">press here</a></p>
 
-
-            <!-- <button type="submit" class=" bg-light p-1 px-2 border-0 rounded-1 ms-3 w-auto">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to clipboard" 
-                class="text-decoration-none  colored rounded-3 border-0 ">Copy</a>
+            <button type="button" class="btn text-light bg-light p-1 px-2 border-0 rounded-1 ms-3 w-auto">
+            copy
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to clipboard" class="colored rounded-3 border-0 "></a>
             </button> -->
+            <!-- <button type="submit" class=" > -->
+                
+                
+                <!--<a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content"></a> -->
+            <!-- </button> -->
             
-            
-            <textarea name="" id="" rows="5" placeholder="translate" class="m-3 rounded-1 ps-3" ></textarea>
-        </div>    
-    </div><!--/translatE2A-->
+            <!-- <textarea name="" id="" rows="5" placeholder="translate" class="m-3 rounded-1 ps-3" ></textarea> -->
+        <!-- </div>     -->
+    <!-- </div> -->
+    <!--/translatE2A-->
+
     <hr>
 
 <!------------------------------------------------------------------------------------------------------>
@@ -238,16 +281,318 @@
 <!------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------>
 
-<div class="caedstitle container-fluid text-center p-3 rounded-1 text-uppercase h2 light-brown">rooms</div>
+    <div class="titlee container-fluid ">
+        <h2
+            class="container-fluid  light-brown text-light text-uppercase text-center p-3 roman-title d-inline-block mb-0 rounded-1 display-5">
+            rooms</h2>
+    </div><!--/titlee-->
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+
+        <div class="cards1 container-fluid my-2 d-flex flex-wrap justify-content-center mb-5">
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room1.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                    <h4 class="card-title ms-2 text-uppercase heavy-colored"> Business Suite</h4> 
+                    <a href="#" class="btn text-light text-capitalize w-auto h-auto me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room2.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Luxury Suite</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Sed ut
+                        perspiciatis unde omnis.</p>
+            
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room3.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Ocean View Room</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room2.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Luxury Suite</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Sed ut
+                        perspiciatis unde omnis.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room5.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Ocean View  Room</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto  h-auto me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room6.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Business Suite</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto  me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room7.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Ocean View Room</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto  me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo.
+                    </p>
+                </div>
+            </div><!--/card-->
+            <div class="card m-3 shadow " style="width:400px">
+                <img class="card-img-top px-2" src="images/card1room8.webp" alt="Card image">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h4 class="card-title ms-2 text-uppercase heavy-colored">Luxury Suite</h4>
+                        <a href="#" class="btn text-light text-capitalize w-auto h-auto  me-2 ">book now</a>
+                    </div>
+                    <p class="card-text colored">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Sed ut
+                        perspiciatis unde omnis.</p>
+            
+                </div>
+            </div><!--/card-->
+        </div><!--/cards1-->
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="fixedimg2 container-fluid">
+        <div class=""></div>
+    </div><!--/fixedimg-->
+
+    <!------------------------------------------------------------------------------------------------------>
+        <hr>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="titlee container-fluid ">
+        <h2
+            class="container-fluid  light-brown text-light text-uppercase text-center p-3 roman-title d-inline-block mb-0 rounded-1 display-5">
+            thanks for</h2>
+    </div><!--/titlee-->
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="container-fluid cards2 d-flex flex-wrap justify-content-evenly mb-5" >
+            <div class="card img-fluid mx-4 my-5" style="width:380px">
+                <img class="card-img-top rounded-2" src="images/creative.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="">
+                        <h4 class="card-title text-light">All thanks and appreciation</h4>
+                        <p class="card-text text-light">July 16, 2025</p>
+                    </div>
+                    <div class="">
+                        <img src="images/creative.jpg" alt="" class="rounded-circle mb-0">
+                        <p class="text-light mb-0">Eng. Mariam Youssif</p>
+                        <p class="text-light mb-0">UX/UI</p>
+                    </div>
+                </div><!--/card-img-overlay-->
+            </div>
+            <div class="card img-fluid mx-4 my-5" style="width:380px">
+                <img class="card-img-top" src="images/creative.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="">
+                        <h4 class="card-title text-light">All thanks and appreciation</h4>
+                        <p class="card-text text-light">July 16, 2025</p>
+                    </div>
+                    <div class="">
+                        <img src="images/creative.jpg" alt="" class="rounded-circle mb-0">
+                        <p class="text-light mb-0">Eng. Mariam Youssif</p>
+                        <p class="text-light mb-0">Front-end</p>
+                    </div>
+                </div><!--/card-img-overlay-->
+            </div>
+            <div class="card img-fluid mx-4 my-5" style="width:380px">
+                <img class="card-img-top" src="images/creative.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <div class="">
+                        <h4 class="card-title text-light">All thanks and appreciation</h4>
+                        <p class="card-text text-light">July 16, 2025</p>
+                    </div>
+                    <div class="">
+                        <img src="images/creative.jpg" alt="" class="rounded-circle mb-0">
+                        <p class="text-light mb-0">Eng. Mariam Youssif</p>
+                        <p class="text-light mb-0">UX/UI</p>
+                    </div>
+                </div><!--/card-img-overlay-->
+            </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------>
+    <hr>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="titlee display-4 text-capitalize text-center roman-title colored mb-4"> luxeryHotel news </div>
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="podcasts container-fluid d-flex flex-wrap justify-content-center mb-5">
+        <div class="card first d-flex justify-content-between flex-lg-row-reverse shadow rounded-5 overflow-y-hidden my-3"
+            style="width:1000px;">
+            <img class="card-img-top" src="images/event1Corporate Meetings.webp" alt="Card image" 
+            style="height: 300px;">
+            <div class="card-body">
+                <h3 class="colored">Corporate Meetings</h3>
+                <p><i class="fa-solid fa-calendar-days"></i>Mon, May 2025</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolores atque molestias ab eveniet beatae? Dolor,
+                    deserunt. Iure voluptate odio fugit aliquid tempora cum molestiae quasi! Temporibus veniam itaque expedita.</p>
+                <span class="p-2 m-1"><i class="fa-solid fa-tag"></i><a href="http://" class="text-decoration-none text-dark">Podcast</a></span>
+                <span class="p-2 m-1"><i class="fa-solid fa-clock"></i><a href="http://" class="text-decoration-none text-dark">55 min</a></span>
+                <span class=" p-2 m-1 text-capitalize "><i class="fa-solid fa-play"></i>
+                    <a href="http://" class="text-decoration-none text-dark">play episode</a></span>
+            </div>
+        </div><!--/card-->
+        <div class="card second d-flex justify-content-between flex-lg-row shadow rounded-5 overflow-y-hidden my-3"
+            style="width:1000px;">
+            <img class="card-img-top" src="images/event2Social.webp" alt="Card image" style="height: 300px;">
+            <div class="card-body">
+                <h3 class="colored">Social Gatherings</h3>
+                <p><i class="fa-solid fa-calendar-days"></i>Mon, May 2025</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolores atque molestias ab
+                    eveniet beatae? Dolor,
+                    deserunt. Iure voluptate odio fugit aliquid tempora cum molestiae quasi! Temporibus veniam itaque expedita.
+                </p>
+                <span class="p-2 m-1"><i class="fa-solid fa-tag"></i><a href="http://"
+                        class="text-decoration-none text-dark">Podcast</a></span>
+                <span class="p-2 m-1"><i class="fa-solid fa-clock"></i><a href="http://"
+                        class="text-decoration-none text-dark">55 min</a></span>
+                <span class=" p-2 m-1 text-capitalize "><i class="fa-solid fa-play"></i>
+                    <a href="http://" class="text-decoration-none text-dark">play episode</a></span>
+            </div>
+        </div><!--/card-->
+        <div class="card first d-flex justify-content-between flex-lg-row-reverse shadow rounded-5 overflow-y-hidden my-3"
+            style="width:1000px;">
+            <img class="card-img-top" src="images/event3corparateRetreats.webp" alt="Card image" style="height: 300px;">
+            <div class="card-body">
+                <h3 class="colored">Corporate Retreats</h3>
+                <p><i class="fa-solid fa-calendar-days"></i>Mon, May 2025</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolores atque molestias ab
+                    eveniet beatae? Dolor,
+                    deserunt. Iure voluptate odio fugit aliquid tempora cum molestiae quasi! Temporibus veniam itaque expedita.
+                </p>
+                <span class="p-2 m-1"><i class="fa-solid fa-tag"></i><a href="http://"
+                        class="text-decoration-none text-dark">Podcast</a></span>
+                <span class="p-2 m-1"><i class="fa-solid fa-clock"></i><a href="http://"
+                        class="text-decoration-none text-dark">55 min</a></span>
+                <span class=" p-2 m-1 text-capitalize "><i class="fa-solid fa-play"></i>
+                    <a href="http://" class="text-decoration-none text-dark">play episode</a></span>
+            </div>
+        </div><!--/card-->
+        <div class="card second d-flex justify-content-between flex-lg-row shadow rounded-5 overflow-y-hidden my-3"
+            style="width:1000px;">
+            <img class="card-img-top" src="images/event4PrivateCelebrations.webp" alt="Card image" style="height: 300px;">
+            <div class="card-body">
+                <h3 class="colored">Private Celebrations</h3>
+                <p><i class="fa-solid fa-calendar-days"></i>Mon, May 2025</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolores atque molestias ab
+                    eveniet beatae? Dolor,
+                    deserunt. Iure voluptate odio fugit aliquid tempora cum molestiae quasi! Temporibus veniam itaque expedita.
+                </p>
+                <span class="p-2 m-1"><i class="fa-solid fa-tag"></i><a href="http://"
+                        class="text-decoration-none text-dark">Podcast</a></span>
+                <span class="p-2 m-1"><i class="fa-solid fa-clock"></i><a href="http://"
+                        class="text-decoration-none text-dark">55 min</a></span>
+                <span class=" p-2 m-1 text-capitalize "><i class="fa-solid fa-play"></i>
+                    <a href="http://" class="text-decoration-none text-dark">play episode</a></span>
+            </div>
+        </div><!--/card-->
+        <!--
+        clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+        -->
+    </div>
+    <!--/podcasts-->
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
+
+    <div class="titlee display-4 text-capitalize text-center roman-title colored "> join us </div>
+    
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
 
 
+    <div class="join-us cards3 container-fluid d-flex row flex-wrap justify-content-lg-between justify-content-sm-center">
 
+        <div class="item shadow my-4 ms-lg-4 mx-sm-3 m-auto col-lg-4  col-xl-3 col-md-12  col-sm-12 col-auto w-auto">
+            <h3 class="text-capitalize text-center mt-2 mb-0"><a href="http://" class="text-decoration-none colored">follow us</a></h3>
+            <img src="images/whats.png" alt="" class="mt-0">
+            <p class=" text-center"><a href="http://" class="text-decoration-none colored">Go to the link</a></p>
+        </div>
+        <div class="item shadow my-4  mx-sm-3 m-auto col-xl-3 col-lg-4 col-md-12  col-sm-12 col-auto w-auto">
+            <h3 class="text-capitalize text-center mt-2 mb-0"><a href="http://" class="text-decoration-none colored">follow
+                    us</a></h3>
+            <img src="images/insta.png" alt="" class="mt-0">
+            <p class=" text-center"><a href="http://" class="text-decoration-none colored">Go to the link</a></p>
+        </div>
+        <div class="item shadow my-4 mx-sm-3 m-auto col-xl-3 col-lg-4 col-md-12 col-sm-12 col-auto w-auto">
+            <h3 class="text-capitalize text-center mt-2 mb-0"><a href="http://" class="text-decoration-none colored">follow
+                    us</a></h3>
+            <img src="images/utube.png" alt="" class="">
+            <p class=" text-center"><a href="http://" class="text-decoration-none colored">Go to the link</a></p>
+        </div>
+        <div class="item shadow my-4 ms-lg-4 mx-sm-3 m-auto col-xl-3 col-lg-4 col-md-12 col-sm-12 col-auto w-auto">
+            <h3 class="text-capitalize text-center mt-2 mb-0"><a href="http://" class="text-decoration-none colored">follow
+                    us</a></h3>
+            <img src="images/linked.png" alt="" class="mt-0">
+            <p class=" text-center"><a href="http://" class="text-decoration-none colored">Go to the link</a></p>
+        </div>
+    </div><!--/join-us-->
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------>
 
 
 
     <!--the end-->
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
+
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

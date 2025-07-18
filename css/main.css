@@ -27,6 +27,12 @@ body{
     font-family: 'Times New Roman', Times, serif !important;
 }
 
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+nav{
+    opacity: 0.7 !important;
+}
 
 .navbar-brand{
     font-size: 35px !important;
@@ -81,6 +87,10 @@ nav .dropdown-toggle:hover::first-letter{
 background-color:var(--hov-main-color) !important; 
 }
 
+.btn:focus{
+    box-shadow: var(--hov-main-color) !important;
+}
+
 nav .form-control{
     width: 55% !important;
     border: 2.5px var(--main-color) solid !important;
@@ -95,7 +105,21 @@ nav .navbar-brand::after{
     height: 75% !important;
     right: -5% !important;
     bottom: 10% !important;
-    margin-right: 3%;
+    margin-right: 3% !important;
+}
+
+.header .modal-header button{
+    background-color: var(--hov-main-color) !important;
+}
+
+.header .modal-body>input{
+    border:solid 2px #917a5a !important;
+    border-radius: 5px !important;
+}
+
+.form-check-input:checked {
+    background-color: #917a5a !important;
+    border-color: #917a5a !important;
 }
 
 @media(max-width:575px){
@@ -143,16 +167,174 @@ color: var(--hov-main-color) !important;
     width: fit-content !important;
 }
 
+.h-auto{
+    height: fit-content !important;
+}
+
 /***************************************************************************************************************/
 /***************************************************************************************************************/
 
 .fixedimg div{
     width: 100% !important;
     height: 50vh !important;
-    background: url(../images/fixedimg1.webp) fixed !important;
+    background: url(../images/fixed.png) fixed !important;
     background-size: cover !important;
 }
 
 /***************************************************************************************************************/
 /***************************************************************************************************************/
 
+.cards1 .card .btn{
+    z-index: 1000;
+}
+
+.cards1 .card .btn:hover {
+    background-color: var(--main-color) !important;
+}
+
+.cards1 .card::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+    background-color: var(--hov-main-color);
+    opacity: 0;
+}
+
+.cards1 .card{
+    position: relative;
+}
+
+.cards1 .card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    background-color: var(--hov-main-color);
+    opacity: 0;
+}
+
+.cards1 .card:hover::before{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+.cards1 .card:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.fixedimg2 div {
+    width: 100% !important;
+    height: 50vh !important;
+    background: url(../images/fixed2.png) fixed !important;
+    background-size: cover !important;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.cards2 .card{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.cards2 .card:hover{
+    transform: scale(1);
+}
+
+.cards2 .card:hover .card-img-overlay{
+background-color: #ceb7986e;
+}
+
+.cards2 .card-img-overlay img{
+    width: 80px;
+    height: 100px;
+    border: solid 2px rgb(212, 206, 206);
+}
+
+.cards2 .card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.61);
+    transition: 1s;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.podcasts .card{
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
+.podcasts .card .card-body p:first-of-type{
+    position: relative !important;
+}
+
+.podcasts .card .card-body p:first-of-type::after{
+    content: "" !important;
+    position: absolute !important;
+    background-color: rgba(24, 14, 1, 0.8) !important;
+    height: 3px !important;
+    width: 10% !important;
+    left: 0 !important;
+    bottom: -40% !important;
+    transition: 0.5s !important; 
+}
+
+.podcasts .card:hover .card-body p:first-of-type::after{
+    width: 15% !important;
+}
+
+.podcasts .card span{
+    background-color: rgb(212, 206, 206) !important;
+    transition: 1s !important; 
+}
+
+.podcasts .card span:hover{
+    background-color: rgb(139, 137, 137) !important;
+}
+
+.podcasts img{
+    transition: 0.5s !important;
+}
+
+.podcasts .card:hover img{
+    transform: scale(1.075) !important;
+}
+
+@media (min-width:992px){
+    
+    .podcasts .first img{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%) !important;
+    }
+
+    .podcasts .second img{
+        clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%) !important;
+    }
+
+}
+
+@media (max-width:991px){
+    .podcasts .card {
+        height: 400px !important;
+    }
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.join-us img {
+    width: 250px !important;
+    height: 175px !important;
+}
