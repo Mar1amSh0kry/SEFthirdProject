@@ -27,6 +27,7 @@ body{
     font-family: 'Times New Roman', Times, serif !important;
 }
 
+
 /***************************************************************************************************************/
 /***************************************************************************************************************/
 
@@ -313,6 +314,14 @@ background-color: #ceb7986e;
     transform: scale(1.075) !important;
 }
 
+.podcasts .second .card-body {
+background: linear-gradient(to left, #ceb7985e, white) !important;
+}
+
+.podcasts .first .card-body {
+    background: linear-gradient(to right, #ceb7985e, white) !important;
+}
+
 @media (min-width:992px){
     
     .podcasts .first img{
@@ -338,3 +347,23 @@ background-color: #ceb7986e;
     width: 250px !important;
     height: 175px !important;
 }
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.footer img{
+    width: 50px !important; 
+    height: 50px !important;
+}
+
+.footer p{
+    transition: 0.35s !important;
+    cursor: pointer !important;
+}
+
+.footer p:hover{
+    color: var(--main-color) !important;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
